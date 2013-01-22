@@ -1,23 +1,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="horizontal" >
-
-    <fragment
-        android:id="@+id/puriaFragment"
-        android:name="si.nafi.puria.PuriaFragment_"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        
-    </fragment>
+    android:layout_alignParentRight="true"
+    android:gravity="right" >
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="350dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/background" android:contentDescription="background puria"/>
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/latest_tweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars = "vertical"
+        android:maxLines="8"
+        android:background="#ff33b5e5"
+        android:padding="5dp"
+        android:text="@string/default_tweet"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/latest_tweet"
+        android:layout_alignRight="@+id/latest_tweet"
+        android:contentDescription="@string/image_description"
+        android:scaleType="centerInside"
+        android:src="@drawable/twitter" />
 
 </RelativeLayout>

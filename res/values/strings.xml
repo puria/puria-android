@@ -7,5 +7,7 @@
     <string name="title_section1">Section 1</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-
+    <string name="image_description">I hate warnings</string>
+    <string name="default_tweet">Usually my tweets goes here, but seems that you don\&apos;t have a network connection!</string>
+    <string name="catch_him">CATCH HIM</string>
 </resources>
